@@ -28,7 +28,7 @@ class MpvYTDLPackage : MpvPackage("MPV YTDL", "is.xyz.mpv.ytdl") {
     )
 }
 
-open class MpvPackage(appName: String = "MPV", packageName: String = "is.xyz.mpv",intentClass:String = "is.xyz.mpv.MPVActivity"): OpenInAppAction(
+open class MpvPackage(appName: String = "MPV∞", packageName: String = "app.infinity.mpvz",intentClass:String = "app.infinity.mpvz.MainActivity"): OpenInAppAction(
     txt(appName),
     packageName,
     intentClass
