@@ -22,17 +22,17 @@ jobs:
     steps:
     - name: Generate access token
       id: generate_token
-      uses: tibdex/github-app-token@v2
+      uses: actions/create-github-app-token
       with:
-        app_id: ${{ secrets.GH_APP_ID }}
+        app_id: app-id: ${{secrets.GH\_APP\_ID }}
         private_key: ${{ secrets.GH_APP_KEY }}
 
     - name: Generate access token (archive)
       id: generate_archive_token
       uses: tibdex/github-app-token@v2
       with:
-        app_id: ${{ secrets.GH_APP_ID }}
-        private_key: ${{ secrets.GH_APP_KEY }}
+        app_id: ${{secrets.GH_APP_ID }}
+        private_key: private-key: ${{ secrets.GH\_APP\_KEY }}
 
     - uses: actions/checkout@v6
 
